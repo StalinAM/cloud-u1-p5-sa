@@ -1,2 +1,101 @@
-.terraform
-.vscode
+
+# ==========================================
+# TERRAFORM
+# ==========================================
+
+# Directorios de trabajo y proveedores descargados
+**/.terraform/*
+
+# Archivos de estado (pueden contener información sensible)
+*.tfstate
+*.tfstate.*
+
+# Archivos de bloqueo temporales
+.terraform.tfstate.lock.info
+
+# Archivos de planes de ejecución
+*.tfplan
+*.tfplan.*
+
+# Archivos de logs y errores
+crash.log
+crash.*.log
+*.log
+
+# Variables de entorno (pueden contener credenciales)
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Archivos de configuración override
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configuración personal de Terraform CLI
+.terraformrc
+terraform.rc
+
+# ==========================================
+# CREDENCIALES Y SECRETOS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Archivos de credenciales
+credentials
+credentials.json
+service-account*.json
+*-credentials.json
+secrets/
+.secrets/
+
+# ==========================================
+# EDITORES E IDE
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# WINDOWS
+# ==========================================
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# LINUX / MACOS
+# ==========================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+.directory
+
+# ==========================================
+# BACKUPS Y TEMPORALES
+# ==========================================
+
+*.bak
+*.backup
+*.tmp
+*.temp
+*.old
