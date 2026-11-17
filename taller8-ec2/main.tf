@@ -42,3 +42,4 @@ resource "aws_instance" "mi_instancia_2" {
   }
   vpc_security_group_ids = [aws_security_group.mi_sg.id] #Asociamos el security group creado anteriormente a la instancia
 }
+
